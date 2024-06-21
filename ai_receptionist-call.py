@@ -5,9 +5,9 @@ from openai import OpenAI
 
 class AI_Assistant:
     def __init__(self):
-        aai.settings.api_key= "84e03c5d3db34590a0dd28cae2b62c70"
+        aai.settings.api_key= "YOUR-API-KEY"
         self.openai_client = OpenAI(api_key="API-KEY")
-        self.elevenlabs_api_key= "sk_5910e396c738ad86027b7fd2099bee8e54d96e657e9306ac"
+        self.elevenlabs_api_key= "YOUR-API-KEY"
 
         #empty transcribe object
         self.transcribe = None
