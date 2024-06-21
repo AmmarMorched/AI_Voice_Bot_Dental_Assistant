@@ -19,6 +19,7 @@ class AI_Assistant:
             {"role":"system", "content":"You are a receptionist at a dental clinic. Be resourcefull and efficient."},
         ]
 
+    ############# Step 2: Real_Time Transcription with AssemblyAI ############
     def start_transcription(self):
         self.transcriber = aai.RealtimeTranscriber(
             sample_rate=16000,
@@ -118,11 +119,6 @@ class AI_Assistant:
             stream= True
         )
         stream(audio_stream)
-
-
-############# Step 2: Real_Time Transcription with AssemblyAI ############
-
-
 
 
 
